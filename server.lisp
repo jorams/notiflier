@@ -127,6 +127,13 @@
   (if-let ((token (receiver-data receiver :gcm-token)))
     (write-json-to-string
      (jso "to" token
+          "data" (jso "title" (or (message-title message)
+                                  :null)
+                      "body" (or (message-body message)
+                                 :null)
+                      "important" (if (message-important-p message)
+                                      t
+                                      :false))
           "notification" (jso "title" (or (message-title message)
                                           :null)
                               "body" (or (message-body message)
