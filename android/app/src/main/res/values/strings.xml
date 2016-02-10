@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notiflier</string>
+    <string name="server_url">Server URL</string>
+    <string name="token">Token</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="awaiting_registration">Awaiting registration</string>
+    <string name="registration_started">Registration started…</string>
+    <string name="registration_complete">Registration complete</string>
+    <string name="registration_failed">Registration failed</string>
+</resources>
